@@ -1,5 +1,5 @@
 import { MovingHeading } from "@/lib/constant";
-import upperCase from "lodash/upperCase";
+import { upperCase } from "lodash";
 import React from "react";
 
 function MovingHeadings() {
