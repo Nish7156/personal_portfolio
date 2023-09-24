@@ -1,7 +1,7 @@
 import React from "react";
 import NextImage from "../NextImage";
-import WhiteLogo from "/public/logo/whiteLogo.png";
-import darkLogo from "/public/logo/darkLogo.png";
+import WhiteLogo from "../../../public/logo/WhiteLogo.png";
+import darkLogo from "../../../public/logo/darkLogo.png";
 
 function Logo({ isDark }: { isDark?: boolean }) {
   return (
