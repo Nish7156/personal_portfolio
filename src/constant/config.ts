@@ -1,7 +1,6 @@
 export const siteConfig = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
+  title: "Nishant Shedage || Developer",
   description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+    "A web developer is a professional responsible for creating and maintaining websites and web applications. They work on the visual elements (front-end) and/or the behind-the-scenes functionality (back-end) to ensure websites are user-friendly, responsive, and perform well across various devices and browsers. Web developers may specialize in front-end, back-end, or full-stack development, using languages and technologies like HTML, CSS, JavaScript, PHP, Python, and databases to bring web projects to life. They play a crucial role in building and enhancing an organization's online presence.",
+  url: "webtriggers.tech",
 };

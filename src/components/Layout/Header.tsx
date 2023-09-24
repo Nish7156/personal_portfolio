@@ -1,14 +1,16 @@
+import Link from "next/link";
 import React from "react";
+import Logo from "../Utility/Logo";
 
 function Header() {
   return (
     <>
-      <header className="header-area">
+      <header className="header-area sticky top-0 z-50">
         <div className="container">
           <div className="gx-row d-flex align-items-center justify-content-between">
-            <a href="./index.html" className="logo">
-              <img src="./assets/images/logo.svg" alt="Logo" />
-            </a>
+            <Link href={""} className="logo">
+              <Logo />
+            </Link>
 
             <nav className="navbar">
               <ul className="menu">

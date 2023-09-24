@@ -25,6 +25,7 @@ function HeroSection() {
                 <BgImage />
                 <div className="img-box">
                   <NextImage
+                  
                     src={"/images/me.jpeg"}
                     alt="Image"
                     height={224}

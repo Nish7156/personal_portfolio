@@ -11,10 +11,7 @@ import { siteConfig } from "@/constant/config";
 import Script from "next/script";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
-import Head from "next/head";
 
-// !STARTERCONF Change these default meta
-// !STARTERCONF Look at @/constant/config to change them
 export const metadata: Metadata = {
   title: {
     default: siteConfig.title,
@@ -42,14 +39,7 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     images: [`${siteConfig.url}/images/og.jpg`],
-    // creator: '@th_clarence',
   },
-  // authors: [
-  //   {
-  //     name: 'Theodorus Clarence',
-  //     url: 'https://theodorusclarence.com',
-  //   },
-  // ],
 };
 
 export default function RootLayout({

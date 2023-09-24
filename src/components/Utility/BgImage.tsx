@@ -4,6 +4,7 @@ import NextImage from "../NextImage";
 function BgImage({ height, width }: any) {
   return (
     <NextImage
+      
       src={"/images/bg1.png"}
       alt="Background Image"
       height={height ? height : 561}

@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import Logo from "../Utility/Logo";
 
 function Footer() {
   return (
@@ -6,9 +8,9 @@ function Footer() {
       <footer className="footer-area">
         <div className="container">
           <div className="footer-content text-center">
-            <a href="./index.html" className="logo">
-              <img src="./assets/images/logo.svg" alt="Logo" />
-            </a>
+            <Link href={""} className="logo">
+              <Logo />
+            </Link>
             <ul className="footer-menu">
               <li>
                 <a href="index.html">Home</a>
@@ -24,7 +26,7 @@ function Footer() {
               </li>
             </ul>
             <p className="copyright">
-              &copy; All rights reserved by <span>WordPress River</span>
+              &copy; All rights reserved by <span>Nishant</span>
             </p>
           </div>
         </div>
