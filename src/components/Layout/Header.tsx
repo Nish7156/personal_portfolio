@@ -1,11 +1,33 @@
+"use client"
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../Utility/Logo";
 
 function Header() {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
-      <header className="header-area sticky top-0 z-50">
+      <header
+        className={`header-area sticky top-0 z-50 ${
+          scrolling ? "bg-black" : "bg-transparent"
+        }  bg-opacity-90`}
+      >
         <div className="container">
           <div className="gx-row d-flex align-items-center justify-content-between">
             <Link href={""} className="logo">
