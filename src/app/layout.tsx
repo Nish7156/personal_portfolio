@@ -1,11 +1,17 @@
-import { Metadata } from 'next';
-import * as React from 'react';
+import { Metadata } from "next";
+import * as React from "react";
 
-import '@/styles/globals.css';
-// !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
-import '@/styles/colors.css';
+import "@/styles/globals.css";
+import "@/styles/colors.css";
+import "../assets/css/aos.css";
+import "../assets/css/bootstrap.min.css";
+import "../assets/css/style.css";
 
-import { siteConfig } from '@/constant/config';
+import { siteConfig } from "@/constant/config";
+import Script from "next/script";
+import Header from "@/components/Layout/Header";
+import Footer from "@/components/Layout/Footer";
+import Head from "next/head";
 
 // !STARTERCONF Change these default meta
 // !STARTERCONF Look at @/constant/config to change them
@@ -16,12 +22,10 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   robots: { index: true, follow: true },
-  // !STARTERCONF this is the default favicon, you can generate your own from https://realfavicongenerator.net/
-  // ! copy to /favicon folder
   icons: {
-    icon: '/favicon/favicon.ico',
-    shortcut: '/favicon/favicon-16x16.png',
-    apple: '/favicon/apple-touch-icon.png',
+    icon: "/favicon/favicon.ico",
+    shortcut: "/favicon/favicon-16x16.png",
+    apple: "/favicon/apple-touch-icon.png",
   },
   manifest: `/favicon/site.webmanifest`,
   openGraph: {
@@ -30,11 +34,11 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     siteName: siteConfig.title,
     images: [`${siteConfig.url}/images/og.jpg`],
-    type: 'website',
-    locale: 'en_US',
+    type: "website",
+    locale: "en_US",
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
     images: [`${siteConfig.url}/images/og.jpg`],
@@ -55,7 +59,17 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        <main className="main-homepage">
+          <Header />
+          {children}
+          <Footer />
+        </main>
+      </body>
+      <Script src="../assets/js/jquery-3.6.4.js" />
+      <Script src="../assets/js/main.js" />
+      <Script src="../assets/js/aos.js" />
+      <Script src="../assets/js/bootstrap.bundle.min.js" />
     </html>
   );
 }

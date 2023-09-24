@@ -116,3 +116,10 @@
     background-size: 0 2px, 100% 2px;
   }
 }
+
+.container{
+  max-width: 1170px !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 20px;
+}
