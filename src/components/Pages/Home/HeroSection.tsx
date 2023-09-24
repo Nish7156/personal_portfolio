@@ -1,6 +1,5 @@
 import React from "react";
 import NextImage from "@/components/NextImage";
-import { upperCase } from "lodash";
 import MovingHeadings from "./SmallCards/MovingHeadings";
 import Credentials from "./SmallCards/Credentials";
 import Projects from "./SmallCards/Projects";
