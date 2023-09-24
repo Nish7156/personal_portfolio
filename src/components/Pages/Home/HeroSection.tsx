@@ -56,7 +56,7 @@ function HeroSection() {
           </div>
 
           {/* SeconRow */}
-          <div className="row mt-8">
+          <div className="row !mt-8">
             <div className="col-md-12">
               <div className="blog-service-profile-wrap d-flex gap-6">
                 <GFonts />
@@ -68,7 +68,7 @@ function HeroSection() {
             </div>
           </div>
           {/* ThirdRow */}
-          <div className="row mt-8">
+          <div className="row !mt-8">
             <NofProjects />
            <LetsWork/>
           </div>
