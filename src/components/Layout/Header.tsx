@@ -1,9 +1,20 @@
-"use client"
+"use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Logo from "../Utility/Logo";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
 function Header() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  const Menus = [
+    { id: 1, title: "Home", link: "/" },
+    { id: 2, title: "About", link: "/about" },
+    { id: 3, title: "Work", link: "/work" },
+    { id: 4, title: "Contact", link: "/contact-us" },
+  ];
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
@@ -30,24 +41,19 @@ function Header() {
       >
         <div className="container">
           <div className="gx-row d-flex align-items-center justify-content-between">
-            <Link href={""} className="logo">
+            <Link href={"/"} className="logo">
               <Logo />
             </Link>
 
             <nav className="navbar">
               <ul className="menu">
-                <li className="active">
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="works.html">Works</a>
-                </li>
-                <li>
-                  <a href="contact.html">Contact</a>
-                </li>
+                {Menus.map((data: any) => {
+                  return (
+                    <li className={pathname === data.link ? "active" : ""}>
+                      <Link href={`${data.link}`}>{data.title}</Link>
+                    </li>
+                  );
+                })}
               </ul>
               <a href="./contact.html" className="theme-btn">
                 Let's talk

@@ -28,13 +28,8 @@ export default function NextImage({
   classNames,
   ...rest
 }: NextImageProps) {
-  const widthIsSet = className?.includes("w-") ?? false;
-
   return (
-    <figure
-      style={!widthIsSet ? { width: `${width}px` } : undefined}
-      className={className}
-    >
+    <figure className={className}>
       <Image
         className={className}
         src={src}

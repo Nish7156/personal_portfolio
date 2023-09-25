@@ -413,7 +413,7 @@ ol {
 
 /* # Header */
 .header-area {
-  margin-top: 10px;
+  margin-top: 2px;
 }
 
 .header-area .logo {
@@ -1796,7 +1796,7 @@ ol {
 
 @media (max-width: 767px) {
   .header-area {
-    padding: 20px 0;
+    padding: 10px 0;
   }
 
   .header-area .navbar {
