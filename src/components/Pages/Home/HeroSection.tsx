@@ -24,7 +24,6 @@ function HeroSection() {
                 <BgImage />
                 <div className="img-box">
                   <NextImage
-                  
                     src={"/images/me.jpeg"}
                     alt="Image"
                     height={224}
@@ -69,7 +68,7 @@ function HeroSection() {
           {/* ThirdRow */}
           <div className="row !mt-8">
             <NofProjects />
-           <LetsWork/>
+            <LetsWork />
           </div>
         </div>
       </section>

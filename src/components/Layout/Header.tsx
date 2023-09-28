@@ -2,12 +2,11 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Logo from "../Utility/Logo";
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 function Header() {
-  const router = useRouter();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
+  const [openMenu, setOpenMenu] = useState(false);
 
   const Menus = [
     { id: 1, title: "Home", link: "/" },
@@ -32,6 +31,13 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  useEffect(() => {
+    setOpenMenu(false);
+  }, [pathname]);
+
+  const handleHamburgerClick = () => {
+    setOpenMenu(!openMenu);
+  };
   return (
     <>
       <header
@@ -45,7 +51,7 @@ function Header() {
               <Logo />
             </Link>
 
-            <nav className="navbar">
+            <nav className={`navbar ${openMenu ? "active" : ""}`}>
               <ul className="menu">
                 {Menus.map((data: any) => {
                   return (
@@ -64,7 +70,10 @@ function Header() {
               Let's talk
             </a>
 
-            <div className="show-menu">
+            <div
+              className={`show-menu ${openMenu ? "active" : ""}`}
+              onClick={handleHamburgerClick}
+            >
               <span></span>
               <span></span>
               <span></span>

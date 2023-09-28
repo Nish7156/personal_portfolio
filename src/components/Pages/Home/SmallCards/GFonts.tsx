@@ -16,6 +16,7 @@ function GFonts() {
             alt="Image"
             width={224}
             height={124}
+            isCenter
           />
           <div className="d-flex align-items-center justify-content-between">
             <div className="infos">

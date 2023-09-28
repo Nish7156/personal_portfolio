@@ -55,6 +55,10 @@ export default function RootLayout({
           {children}
           <Footer />
         </main>
+        {/* <div id="preloader" className="preloader off">
+          <div className="black_wall"></div>
+          <div className="loader"></div>
+        </div> */}
       </body>
       <Script src="../assets/js/jquery-3.6.4.js" />
       <Script src="../assets/js/main.js" />

@@ -9,7 +9,7 @@ function LetsWork() {
     <>
       <div className="col-md-6 aos-init aos-animate" data-aos="zoom-in">
         <div className="about-contact-box info-box shadow-box">
-          <a className="overlay-link" href="./contact.html"></a>
+          <Link className="overlay-link" href="contact-us"></Link>
           <BgImage />
 
           <NextImage

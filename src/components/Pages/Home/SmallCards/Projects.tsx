@@ -12,10 +12,11 @@ function Projects() {
           <a className="overlay-link" href="./works.html"></a>
           <BgImage />
           <NextImage
-            src={"/images/my-works.png"}
+            src={"/images/project12.png"}
             alt="Image"
             width={224}
             height={124}
+            isCenter
           />
           <div className="d-flex align-items-center justify-content-between">
             <div className="infos">
