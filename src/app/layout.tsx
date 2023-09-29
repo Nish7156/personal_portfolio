@@ -3,12 +3,10 @@ import * as React from "react";
 
 import "@/styles/globals.css";
 import "@/styles/colors.css";
-import "../assets/css/aos.css";
 import "../assets/css/bootstrap.min.css";
 import "../assets/css/style.css";
 
 import { siteConfig } from "@/constant/config";
-import Script from "next/script";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 
@@ -55,15 +53,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </main>
-        {/* <div id="preloader" className="preloader off">
-          <div className="black_wall"></div>
-          <div className="loader"></div>
-        </div> */}
       </body>
-      <Script src="../assets/js/jquery-3.6.4.js" />
-      <Script src="../assets/js/main.js" />
-      <Script src="../assets/js/aos.js" />
-      <Script src="../assets/js/bootstrap.bundle.min.js" />
     </html>
   );
 }
