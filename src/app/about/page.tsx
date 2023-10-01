@@ -10,10 +10,13 @@ function AboutUs() {
     <div className="container">
       <AboutTop />
       <Details />
-      <div className="mt-10 flex gap-4">
+      <div className="mt-10 flex flex-col md:flex-row gap-4">
         <Profile />
-        <LetsWork />
-        <Credentials />
+       <div className="hidden lg:flex">
+       <Credentials />
+       </div>
+
+        <LetsWork  />
       </div>
     </div>
   );
