@@ -29,7 +29,7 @@ function Profile() {
               <h1>Profiles</h1>
             </div>
 
-            <Link href={""} className="about-btn">
+            <Link href={"/about"} className="about-btn">
               <HoverIcon />
             </Link>
           </div>
