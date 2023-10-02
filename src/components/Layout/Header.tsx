@@ -61,14 +61,14 @@ function Header() {
                   );
                 })}
               </ul>
-              <a href="./contact.html" className="theme-btn">
-                Let's talk
-              </a>
+              <Link href={"/contact-us"} legacyBehavior>
+                <a className="theme-btn">Let's talk</a>
+              </Link>
             </nav>
 
-            <a href="./contact.html" className="theme-btn">
-              Let's talk
-            </a>
+            <Link href={"/contact-us"} legacyBehavior>
+              <a className="theme-btn">Let's talk</a>
+            </Link>
 
             <div
               className={`show-menu ${openMenu ? "active" : ""}`}

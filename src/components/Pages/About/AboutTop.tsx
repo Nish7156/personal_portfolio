@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 function AboutTop() {
@@ -31,10 +32,11 @@ function AboutTop() {
                       />
 
                       <div className="image-inner">
-                        <img
-                          decoding="async"
-                          src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/me2.png"
-                          alt="About Me"
+                      <Image
+                          src={"/images/me.jpeg"}
+                          alt="Image"
+                          width={305}
+                          height={296}
                         />
                       </div>
                     </div>
@@ -82,8 +84,8 @@ function AboutTop() {
                         className="star-icon"
                       />
 
-                      <h1>David Henderson</h1>
-                      <p>
+                      <h1 className='text-primary'>Nishant Shedage</h1>
+                      <p className='pt-2'>
                         I am a San francisco-based product designer with a focus
                         on web design, illustration, a visual development. I
                         have a diverse range of experience having worked across
