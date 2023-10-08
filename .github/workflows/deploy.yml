@@ -16,10 +16,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 18
 
       - name: Install Yarn globally
-        run: yarn install -g yarn
+        run: yarn global add yarn
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
