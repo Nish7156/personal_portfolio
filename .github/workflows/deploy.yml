@@ -16,10 +16,10 @@ jobs:
       - name: Set up Node.js and Yarn
         uses: actions/setup-node@v2
         with:
-          node-version: 14  # Choose the appropriate Node.js version
+          node-version: 18.15.0  # Use a version of Node.js that meets the requirements
           registry-url: https://registry.npmjs.org
           cache: 'yarn'
-      
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
