@@ -1,9 +1,12 @@
+import CardOutline from "@/components/CommonComponents/CardOutline";
+import DetailCard from "@/components/Pages/About/DetailCard";
+import Details from "@/components/Pages/About/Details";
 import React from "react";
 
 function Projects() {
   return (
     <>
-      <div className=" my-16">
+      <div className=" container my-16">
         <h1 className="section-heading ">
           <img
             decoding="async"
@@ -20,6 +23,13 @@ function Projects() {
         <section>
           <h2 className="section-heading mt-12">Comming Soon</h2>
         </section>
+        <div className="my-4">
+          <Details />
+          <DetailCard />
+          <CardOutline>
+            jj
+          </CardOutline>
+        </div>
       </div>
     </>
   );
