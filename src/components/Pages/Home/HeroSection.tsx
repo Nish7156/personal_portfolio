@@ -10,6 +10,7 @@ import Service from "./SmallCards/Service";
 import Profile from "./SmallCards/Profile";
 import NofProjects from "./SmallCards/NofProjects";
 import LetsWork from "./SmallCards/LetsWork";
+import Link from "next/link";
 
 function HeroSection() {
   return (
@@ -34,9 +35,9 @@ function HeroSection() {
                   <h4>A WEB DEVELOPER</h4>
                   <h1>Nishant Shedage.</h1>
                   <p>I am a Web Designer based in mumbai.</p>
-                  <a href="#" className="about-btn">
+                  <Link className="about-btn" href={"/about"}>
                     <HoverIcon />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

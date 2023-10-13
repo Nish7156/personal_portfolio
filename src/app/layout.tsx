@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import * as React from "react";
 
 import "@/styles/globals.css";
-import "@/styles/colors.css";
 import "../assets/css/bootstrap.min.css";
 import "../assets/css/style.css";
 
@@ -39,6 +38,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/images/og.jpg`],
   },
 };
+
 
 export default function RootLayout({
   children,

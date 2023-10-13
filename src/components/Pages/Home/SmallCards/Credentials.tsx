@@ -1,6 +1,7 @@
 import NextImage from "@/components/NextImage";
 import BgImage from "@/components/Utility/BgImage";
 import HoverIcon from "@/components/Utility/HoverIcon";
+import Link from "next/link";
 import React from "react";
 
 function Credentials() {
@@ -8,7 +9,7 @@ function Credentials() {
     <>
       <div data-aos="zoom-in" className="aos-init aos-animate">
         <div className="about-crenditials-box info-box shadow-box h-full">
-          <a className="overlay-link" href="./credentials.html"></a>
+          <Link className="overlay-link" href={'/about'}></Link>
           <BgImage />
           <NextImage
             src={"/images/sign.png"}
@@ -23,9 +24,9 @@ function Credentials() {
               <h1>Credentials</h1>
             </div>
 
-            <a href="./credentials.html" className="about-btn">
+            <Link className="about-btn" href={"/about"}>
               <HoverIcon />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

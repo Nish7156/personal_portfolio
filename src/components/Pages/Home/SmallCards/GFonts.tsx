@@ -9,7 +9,7 @@ function GFonts() {
     <>
       <div data-aos="zoom-in" className="aos-init aos-animate">
         <div className="about-blog-box info-box shadow-box h-full">
-          <a href="./blog.html" className="overlay-link"></a>
+        <Link className="overlay-link" href={''}></Link>
           <BgImage />
           <NextImage
             src={"/images/gfonts.png"}

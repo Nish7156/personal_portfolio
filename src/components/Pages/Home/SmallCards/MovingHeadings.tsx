@@ -1,5 +1,6 @@
 import { MovingHeading } from "@/lib/constant";
 import { upperCase } from "lodash";
+import Image from "next/image";
 import React from "react";
 
 function MovingHeadings() {
@@ -16,7 +17,7 @@ function MovingHeadings() {
                       <>
                         {upperCase(data?.text)}{" "}
                         <b>{upperCase(data?.boldText)}</b>{" "}
-                        <img src="/svg/star1.svg" alt="Star" />
+                        <Image width={10} height={10} src={"/svg/star1.svg"} alt="Star" />
                       </>
                     );
                   })}

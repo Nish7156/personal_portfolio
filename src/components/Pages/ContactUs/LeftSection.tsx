@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import useScreenResize from "@/Hooks/useScreenResize";
 import { Twitter, Instagram, LinkedIn, Mail } from "iconoir-react";
 import Link from "next/link";
@@ -39,7 +39,7 @@ function LeftSection() {
             <div className="icon-box shadow-box">
               <Link href={""} legacyBehavior>
                 <a className=" hover:text-primary absolute right-[30%] top-[30%]">
-                  <BiPhoneCall fontSize={isTab ? "25px" :"30px"} />
+                  <BiPhoneCall fontSize={isTab ? "25px" : "30px"} />
                 </a>
               </Link>
             </div>
@@ -58,7 +58,7 @@ function LeftSection() {
             <div className="icon-box shadow-box">
               <Link href={""} legacyBehavior>
                 <a className=" hover:text-primary absolute right-[30%] top-[30%]">
-                  <BiLocationPlus fontSize={isTab ? "25px" :"30px"} />
+                  <BiLocationPlus fontSize={isTab ? "25px" : "30px"} />
                 </a>
               </Link>
             </div>

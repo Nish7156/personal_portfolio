@@ -6,7 +6,7 @@ type NextImageProps = {
     image?: string;
     blur?: string;
   };
-  isCenter?:boolean;
+  isCenter?: boolean;
   alt: string;
 } & (
   | { width: string | number; height: string | number }
@@ -31,7 +31,15 @@ export default function NextImage({
   ...rest
 }: NextImageProps) {
   return (
-    <figure className={className ?className : isCenter ? "flex justify-center items-center" : ''} >
+    <figure
+      className={
+        className
+          ? className
+          : isCenter
+          ? "flex items-center justify-center"
+          : ""
+      }
+    >
       <Image
         className={className}
         src={src}
