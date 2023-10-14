@@ -15,8 +15,7 @@ function NofProjects() {
                   <div key={data.id} className="client-item">
                     <h1>{data?.value}</h1>
                     <p>
-                      Years <br />
-                      Experience
+                     {data.title}
                     </p>
                   </div>
                 );

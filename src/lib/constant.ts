@@ -46,12 +46,12 @@ export const MovingHeading = [
 export const ClientData = [
   {
     id: 1,
-    value: "07",
+    value: "4",
     title: "YEARS EXPERIENCE",
   },
   {
     id: 2,
-    value: "+125",
+    value: "20+",
     title: "CLIENTS WORLDWIDE",
   },
   {

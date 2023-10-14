@@ -6,11 +6,11 @@ function GFontsPage() {
   return (
     <>
       <div className="container">
-        <div className="  sm:my-4 md:my-28">
+        <div className="md:my-28">
           <StarHeading heading={"Comming Soon"} />
         </div>
-        <div className=" flex justify-center items-center">
-            <PrimaryButton link={"/"} btnText={"Go Back"}/>
+        <div className=" mt-20 flex items-center justify-center md:mt-0">
+          <PrimaryButton link={"/"} btnText={"Go Back"} />
         </div>
       </div>
     </>

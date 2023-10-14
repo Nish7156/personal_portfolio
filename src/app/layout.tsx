@@ -6,8 +6,7 @@ import "../assets/css/bootstrap.min.css";
 import "../assets/css/style.css";
 
 import { siteConfig } from "@/constant/config";
-import Header from "@/components/Layout/Header";
-import Footer from "@/components/Layout/Footer";
+
 import Layout from "@/components/Layout";
 
 export const metadata: Metadata = {
@@ -28,7 +27,7 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     siteName: siteConfig.title,
-    images: [`${siteConfig.url}/images/og.jpg`],
+    images: [`/public/images/ogImage.png`],
     type: "website",
     locale: "en_US",
   },

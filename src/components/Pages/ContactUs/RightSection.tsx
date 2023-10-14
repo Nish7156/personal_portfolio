@@ -11,7 +11,7 @@ function RightSection() {
       >
         <div className="shadow-box relative">
           <BgImage />
-          <div className=" about-btn -top-10">
+          <div className=" about-btn -top-10 hidden lg:block">
             <NextImage
               src={"/images/icon3.png"}
               alt="Icon"

@@ -24,6 +24,7 @@ function HeroSection() {
                 title={"A WEB DEVELOPER."}
                 name={"NISHANT SHEDAGE"}
                 desc={"I am web developer based on Mumbai."}
+                link="/about"
               />
             </div>
             <div className="col-md-6">
