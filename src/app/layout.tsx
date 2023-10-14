@@ -8,6 +8,7 @@ import "../assets/css/style.css";
 import { siteConfig } from "@/constant/config";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
+import Layout from "@/components/Layout";
 
 export const metadata: Metadata = {
   title: {
@@ -39,7 +40,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: {
@@ -49,9 +49,7 @@ export default function RootLayout({
     <html>
       <body>
         <main className="main-homepage">
-          <Header />
-          {children}
-          <Footer />
+          <Layout>{children}</Layout>
         </main>
       </body>
     </html>

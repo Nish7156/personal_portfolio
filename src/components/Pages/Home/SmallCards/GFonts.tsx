@@ -9,7 +9,7 @@ function GFonts() {
     <>
       <div data-aos="zoom-in" className="aos-init aos-animate">
         <div className="about-blog-box info-box shadow-box h-full">
-        <Link className="overlay-link" href={''}></Link>
+          <Link className="overlay-link" href={"/g-fonts"}></Link>
           <BgImage />
           <NextImage
             src={"/images/gfonts.png"}
@@ -24,7 +24,7 @@ function GFonts() {
               <h1>GFonts</h1>
             </div>
 
-            <Link href={''} className="about-btn">
+            <Link href={"/g-fonts"} className="about-btn">
               <HoverIcon />
             </Link>
           </div>

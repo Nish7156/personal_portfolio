@@ -1,34 +1,14 @@
-import CardOutline from "@/components/CommonComponents/CardOutline";
-import DetailCard from "@/components/Pages/About/DetailCard";
-import Details from "@/components/Pages/About/Details";
-import React from "react";
+import ProjectSection from "@/components/Pages/Projets/ProjectSection";
+import StarHeading from "@/components/elements/StarHeading";
+import React, { Suspense } from "react";
 
 function Projects() {
   return (
     <>
-      <div className=" container my-16">
-        <h1 className="section-heading ">
-          <img
-            decoding="async"
-            src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
-            alt="Star"
-          />
-          All Projects
-          <img
-            decoding="async"
-            src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
-            alt="Star"
-          />
-        </h1>
-        <section>
-          <h2 className="section-heading mt-12">Comming Soon</h2>
-        </section>
-        <div className="my-4">
-          <Details />
-          <DetailCard />
-          <CardOutline>
-            jj
-          </CardOutline>
+      <div className=" container my-8">
+        <StarHeading heading="ALL PROJECTS" />
+        <div className="mt-12 grid grid-cols-1 gap-4 lg:grid-cols-2">
+          <ProjectSection />
         </div>
       </div>
     </>

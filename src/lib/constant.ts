@@ -1,3 +1,10 @@
+export const Menus = [
+  { id: 1, title: "Home", link: "/" },
+  { id: 2, title: "About", link: "/about" },
+  { id: 3, title: "Projects", link: "/projects" },
+  { id: 4, title: "Contact", link: "/contact-us" },
+];
+
 export const MovingHeading = [
   {
     id: 1,
@@ -36,7 +43,7 @@ export const MovingHeading = [
   },
 ];
 
-export   const ClientData = [
+export const ClientData = [
   {
     id: 1,
     value: "07",
@@ -51,5 +58,36 @@ export   const ClientData = [
     id: 3,
     value: "+10",
     title: "TOTAL PROJECTS",
+  },
+];
+
+export const ProjectList = [
+  {
+    id: 1,
+    title: "Web App",
+    projectTitle: "Toopgeek.ai",
+    desc: "Revolutionize Hiring with AI-Powered Precision",
+    image: "",
+    link: "",
+    techStack: [
+      {
+        icon: "",
+        name: "",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Web App",
+    projectTitle: "Kofuku Social",
+    desc: "Revolutionize Hiring with AI-Powered Precision",
+    image: "",
+    link: "",
+    techStack: [
+      {
+        icon: "",
+        name: "",
+      },
+    ],
   },
 ];

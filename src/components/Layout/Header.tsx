@@ -4,16 +4,9 @@ import React, { useEffect, useState } from "react";
 import Logo from "../Utility/Logo";
 import { usePathname } from "next/navigation";
 
-function Header() {
+function Header({ Menus }: any) {
   const pathname = usePathname();
   const [openMenu, setOpenMenu] = useState(false);
-
-  const Menus = [
-    { id: 1, title: "Home", link: "/" },
-    { id: 2, title: "About", link: "/about" },
-    { id: 3, title: "Projects", link: "/projects" },
-    { id: 4, title: "Contact", link: "/contact-us" },
-  ];
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {

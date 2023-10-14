@@ -11,6 +11,7 @@ import Profile from "./SmallCards/Profile";
 import NofProjects from "./SmallCards/NofProjects";
 import LetsWork from "./SmallCards/LetsWork";
 import Link from "next/link";
+import ProfileCard from "./SmallCards/ProfileCard";
 
 function HeroSection() {
   return (
@@ -19,27 +20,11 @@ function HeroSection() {
         <div className="container">
           <div className="row">
             <div className="col-md-6 aos-init aos-animate" data-aos="zoom-in">
-              <div className="about-me-box shadow-box">
-                <a className="overlay-link" href="#"></a>
-
-                <BgImage />
-                <div className="img-box">
-                  <NextImage
-                    src={"/images/me.jpeg"}
-                    alt="Image"
-                    height={224}
-                    width={224}
-                  />
-                </div>
-                <div className="infos">
-                  <h4>A WEB DEVELOPER</h4>
-                  <h1>Nishant Shedage.</h1>
-                  <p>I am a Web Designer based in mumbai.</p>
-                  <Link className="about-btn" href={"/about"}>
-                    <HoverIcon />
-                  </Link>
-                </div>
-              </div>
+              <ProfileCard
+                title={"A WEB DEVELOPER."}
+                name={"NISHANT SHEDAGE"}
+                desc={"I am web developer based on Mumbai."}
+              />
             </div>
             <div className="col-md-6">
               <div className="about-credentials-wrap">

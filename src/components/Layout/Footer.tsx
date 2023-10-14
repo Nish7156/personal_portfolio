@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Logo from "../Utility/Logo";
 
-function Footer() {
+function Footer({ Menus }: any) {
   return (
     <>
       <footer className="footer-area">
@@ -12,18 +12,13 @@ function Footer() {
               <Logo />
             </Link>
             <ul className="footer-menu">
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="works.html">Works</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
+              {Menus.map((data: any) => {
+                return (
+                  <li>
+                    <Link href={`${data.link}`}>{data.title}</Link>
+                  </li>
+                );
+              })}
             </ul>
             <p className="copyright">
               &copy; All rights reserved by <span>Nishant</span>
