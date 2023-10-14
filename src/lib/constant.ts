@@ -1,3 +1,6 @@
+import TopgeekImage from "/public/images/topgeekai.jpg";
+import KofukuImage from "/public/images/kofuku.jpg";
+
 export const Menus = [
   { id: 1, title: "Home", link: "/" },
   { id: 2, title: "About", link: "/about" },
@@ -67,8 +70,9 @@ export const ProjectList = [
     title: "Web App",
     projectTitle: "Toopgeek.ai",
     desc: "Revolutionize Hiring with AI-Powered Precision",
-    image: "",
-    link: "",
+    image: TopgeekImage,
+    link: "https://topgeek.ai/",
+    badge: null,
     techStack: [
       {
         icon: "",
@@ -81,8 +85,9 @@ export const ProjectList = [
     title: "Web App",
     projectTitle: "Kofuku Social",
     desc: "Revolutionize Hiring with AI-Powered Precision",
-    image: "",
+    image: KofukuImage,
     link: "",
+    badge: "WIP",
     techStack: [
       {
         icon: "",

@@ -1,30 +1,33 @@
 import { ProjectList } from "@/lib/constant";
 import React from "react";
-import ProfileCard from "../Home/SmallCards/ProfileCard";
-import LoadingCard from "@/components/CommonComponents/LoadingCard";
+import ProjectCard from "@/components/CommonComponents/ProjectCard";
 
 async function getData() {
-  await new Promise((resolve) => setTimeout(resolve, 5000));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   return ProjectList;
 }
 
-function ProjectSection() {
-  const projectPromise = getData();
+async function ProjectSection() {
+  const projectListsData = await getData();
 
   return (
-    <React.Suspense fallback={<LoadingCard />}>
-      {projectPromise.then((projects) =>
-        projects.map((data) => (
-          <div key={data.id}>
-            <ProfileCard
-              title={data.title}
-              name={data.projectTitle}
-              desc={data.desc}
-            />
-          </div>
-        ))
-      )}
-    </React.Suspense>
+    <>
+      {projectListsData &&
+        projectListsData.map((data: any) => {
+          return (
+            <div key={data.id}>
+              <ProjectCard
+                title={data.title}
+                name={data.projectTitle}
+                desc={data.desc}
+                imageSrc={data.image}
+                link={data.link}
+                badge={data.badge}
+              />
+            </div>
+          );
+        })}
+    </>
   );
 }
 
