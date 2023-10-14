@@ -27,8 +27,11 @@ function LeftSection() {
             </div>
             <div className="right">
               <span>MAIL us</span>
-              <h4>shedagenishant40@gmail.com</h4>
-              <h4>webtriggers11@gmail.com</h4>
+              <h4>
+                <Link href={"mailto:shedagenishant40@gmail.com"}>
+                  shedagenishant40@gmail.com
+                </Link>
+              </h4>
             </div>
           </li>
 
@@ -46,8 +49,9 @@ function LeftSection() {
 
             <div className="right">
               <span>Contact Us</span>
-              <h4>8419997925</h4>
-              <h4>9930101612</h4>
+              <h4>
+                <Link href={"tel:8419997925"}>8419997925</Link>
+              </h4>
             </div>
           </li>
 

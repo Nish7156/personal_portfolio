@@ -1850,7 +1850,7 @@ ol {
   }
   .contact-area .gx-row,
   .credential-area .container .gx-row {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .contact-area .contact-form {
     margin-top: 50px;

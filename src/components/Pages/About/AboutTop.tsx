@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 function AboutTop() {
   return (
     <>
-         <div className=" mt-0 md:!mt-10">
+      <div className=" mt-0 md:!mt-10">
         <div className="flex flex-col gap-4 md:flex-row">
           <div
             className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8c8f0ed"
@@ -32,7 +32,7 @@ function AboutTop() {
                       />
 
                       <div className="image-inner">
-                      <Image
+                        <Image
                           src={"/images/me.jpeg"}
                           alt="Image"
                           width={305}
@@ -84,12 +84,16 @@ function AboutTop() {
                         className="star-icon"
                       />
 
-                      <h1 className='text-primary'>Nishant Shedage</h1>
-                      <p className='pt-2'>
-                        I am a San francisco-based product designer with a focus
-                        on web design, illustration, a visual development. I
-                        have a diverse range of experience having worked across
-                        various fields and industries.
+                      <h1 className="text-primary">Nishant Shedage</h1>
+                      <p className="pt-2">
+                        I'm a full-stack developer with skills in both front-end
+                        and back-end development, using languages like HTML,
+                        CSS, JavaScript, and technologies such as PHP or Python.
+                        I specialize in creating user-friendly and
+                        high-performance web applications, offering end-to-end
+                        solutions for diverse online experiences. My commitment
+                        is to deliver seamless and responsive projects that
+                        contribute to a positive user journey.
                       </p>
                     </div>
                   </div>
@@ -100,7 +104,7 @@ function AboutTop() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default AboutTop
+export default AboutTop;

@@ -12,9 +12,9 @@ function Projects() {
           <Link href={"/projects"} className="overlay-link" />
           <BgImage />
           <NextImage
-            src={"/images/project21.png"}
+            src={"/images/5013256.jpg"}
             alt="Image"
-            width={224}
+            width={200}
             height={122}
             isCenter
           />

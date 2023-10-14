@@ -12,10 +12,10 @@ function Credentials() {
           <Link className="overlay-link" href={'/about'}></Link>
           <BgImage />
           <NextImage
-            src={"/images/sign.png"}
+            src={"/logo/WhiteLogo.png"}
             alt="Image"
-            width={224}
-            height={124}
+            width={120}
+            height={100}
             isCenter
           />
           <div className="d-flex align-items-center justify-content-between">

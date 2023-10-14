@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import { Menus } from "@/lib/constant";
 
 function Layout({ children }: any) {
+  
   return (
     <>
       <Header Menus={Menus} />

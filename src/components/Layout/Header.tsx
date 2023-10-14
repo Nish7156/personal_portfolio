@@ -3,6 +3,8 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Logo from "../Utility/Logo";
 import { usePathname } from "next/navigation";
+import { usePageVisibility } from "../UserTraking/usePageVisibility";
+import { Metadata } from "next";
 
 function Header({ Menus }: any) {
   const pathname = usePathname();
@@ -31,6 +33,7 @@ function Header({ Menus }: any) {
   const handleHamburgerClick = () => {
     setOpenMenu(!openMenu);
   };
+
   return (
     <>
       <header

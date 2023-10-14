@@ -27,14 +27,14 @@ function Details() {
 
                       <ul>
                         <li>
-                          <p className="date">2007 - 2017</p>
-                          <h2>Framer Designer &amp; Developer</h2>
-                          <p className="type">Bluebase Designs</p>
+                          <p className="date">2022 - current</p>
+                          <h2>Full-Stack Web Developer</h2>
+                          <p className="type">All types of web apolications</p>
                         </li>
                         <li>
-                          <p className="date">2017 - 2023</p>
+                          <p className="date">2019 - 2022</p>
                           <h2>Front-End Developer</h2>
-                          <p className="type">Larsen &amp; Toubro</p>
+                          <p className="type">One page websites</p>
                         </li>
                       </ul>
                     </div>
@@ -65,14 +65,14 @@ function Details() {
 
                       <ul>
                         <li>
-                          <p className="date">2004 - 2007</p>
-                          <h2>Bachelor Degree in Psychology</h2>
-                          <p className="type">University of California</p>
+                          <p className="date">2018 - 2022</p>
+                          <h2>Computer Science Engineering</h2>
+                          <p className="type">University of Mumbai</p>
                         </li>
                         <li>
-                          <p className="date">2007 - 2009</p>
-                          <h2>Master Degree in Designing</h2>
-                          <p className="type">University of Texas</p>
+                          <p className="date">2018 - 2019</p>
+                          <h2>Web Development Traning</h2>
+                          <p className="type">Udemy</p>
                         </li>
                       </ul>
                     </div>

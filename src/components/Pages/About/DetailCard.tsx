@@ -24,9 +24,9 @@ function DetailCard() {
 
                 <ul>
                   <li>
-                    <p className="date">2007 - 2017</p>
-                    <h2>Framer Designer &amp; Developer</h2>
-                    <p className="type">Bluebase Designs</p>
+                    <p className="date">2022 - current</p>
+                    <h2>FullStack Developer</h2>
+                    <p className="type">Bluebase jj</p>
                   </li>
                   <li>
                     <p className="date">2017 - 2023</p>
