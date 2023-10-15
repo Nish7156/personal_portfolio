@@ -24,7 +24,7 @@ function ProjectCard({
 }: IprofileCard) {
   return (
     <>
-      <div data-aos="zoom-in" className="aos-init aos-animate">
+      <div data-aos="zoom-in" className="aos-init aos-animate ">
         <div className="about-blog-box info-box shadow-box h-full">
           <Link
             className="overlay-link"
