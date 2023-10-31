@@ -49,17 +49,17 @@ export const MovingHeading = [
 export const ClientData = [
   {
     id: 1,
-    value: "4",
+    value: "3",
     title: "YEARS EXPERIENCE",
   },
   {
     id: 2,
-    value: "20+",
+    value: "10+",
     title: "CLIENTS WORLDWIDE",
   },
   {
     id: 3,
-    value: "+10",
+    value: "10+",
     title: "TOTAL PROJECTS",
   },
 ];

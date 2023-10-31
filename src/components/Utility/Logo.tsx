@@ -8,7 +8,7 @@ function Logo({ isDark }: { isDark?: boolean }) {
     <NextImage
       src={!isDark ? WhiteLogo : darkLogo}
       className="logo"
-      width={80}
+      width={90}
       height={27}
       alt="Logo"
     />

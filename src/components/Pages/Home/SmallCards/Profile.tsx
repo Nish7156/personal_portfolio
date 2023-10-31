@@ -11,7 +11,7 @@ function Profile() {
         <div className="about-profile-box info-box shadow-box h-full">
           <BgImage />
           <div className="inner-profile-icons shadow-box">
-            <Link href={""} legacyBehavior>
+            <Link href={"https://webtriggers.tech/"} legacyBehavior>
               <a target="_blank" rel="noopener noreferrer">
                 <Dribbble fontSize={"22px"} />
               </a>
