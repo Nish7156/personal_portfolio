@@ -8,7 +8,7 @@ function LetsWork() {
     <>
       <div className="col-md-6 aos-init aos-animate" data-aos="zoom-in">
         <div className="about-contact-box info-box shadow-box">
-          <Link className="overlay-link" href="/contact-us"></Link>
+          <Link className="overlay-link" href="/contact-us" prefetch={false}></Link>
           <div className="z-10">
             <BgImage />
           </div>
@@ -16,7 +16,7 @@ function LetsWork() {
             Let's <br />
             work <span>together.</span>
           </h1>
-          <Link className="about-btn" href={"/contact-us"}>
+          <Link className="about-btn" href={"/contact-us"} prefetch={false}>
             <HoverIcon />
           </Link>
         </div>

@@ -9,7 +9,7 @@ function Credentials() {
     <>
       <div data-aos="zoom-in" className="aos-init aos-animate">
         <div className="about-crenditials-box info-box shadow-box h-full">
-          <Link className="overlay-link" href={'/about'}></Link>
+          <Link className="overlay-link" href={"/about"} prefetch={false}></Link>
           <BgImage />
           <NextImage
             src={"/logo/WhiteLogo.png"}
@@ -24,7 +24,7 @@ function Credentials() {
               <h1>Credentials</h1>
             </div>
 
-            <Link className="about-btn" href={"/about"}>
+            <Link className="about-btn" href={"/about"} prefetch={false}>
               <HoverIcon />
             </Link>
           </div>

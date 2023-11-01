@@ -34,7 +34,7 @@ function ProfileCard({ title, name, desc, link, imageSrc }: IprofileCard) {
           <h4>{title}</h4>
           <h1>{name}</h1>
           <p>{desc}</p>
-          <Link className="about-btn" href={link ? `${link}` : "/"}>
+          <Link className="about-btn" href={link ? `${link}` : "/"} prefetch={false}>
             <HoverIcon />
           </Link>
         </div>

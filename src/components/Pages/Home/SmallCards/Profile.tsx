@@ -11,13 +11,13 @@ function Profile() {
         <div className="about-profile-box info-box shadow-box h-full">
           <BgImage />
           <div className="inner-profile-icons shadow-box">
-            <Link href={"https://webtriggers.tech/"} legacyBehavior>
+            <Link href={"https://webtriggers.tech/"} prefetch={false} legacyBehavior>
               <a target="_blank" rel="noopener noreferrer">
                 <Dribbble fontSize={"22px"} />
               </a>
             </Link>
 
-            <Link href={"https://www.linkedin.com/in/nishant-shedage-b2497520b/"} legacyBehavior>
+            <Link href={"https://www.linkedin.com/in/nishant-shedage-b2497520b/"} prefetch={false} legacyBehavior>
               <a target="_blank" rel="noopener noreferrer">
                 <LinkedIn fontSize={"22px"} />
               </a>

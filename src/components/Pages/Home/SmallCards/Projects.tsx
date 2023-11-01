@@ -9,7 +9,7 @@ function Projects() {
     <>
       <div data-aos="zoom-in" className="aos-init aos-animate">
         <div className="about-project-box info-box shadow-box h-full">
-          <Link href={"/projects"} className="overlay-link" />
+          <Link href={"/projects"} className="overlay-link" prefetch={false}/>
           <BgImage />
           <NextImage
             src={"/images/5013256.jpg"}
@@ -24,7 +24,7 @@ function Projects() {
               <h1>Projects</h1>
             </div>
 
-            <Link href={"/projects"} className="about-btn">
+            <Link href={"/projects"} className="about-btn" prefetch={false}>
               <HoverIcon />
             </Link>
           </div>
