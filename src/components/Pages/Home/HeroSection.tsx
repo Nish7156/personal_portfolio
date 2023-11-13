@@ -1,16 +1,12 @@
 import React from "react";
-import NextImage from "@/components/NextImage";
 import MovingHeadings from "./SmallCards/MovingHeadings";
 import Credentials from "./SmallCards/Credentials";
 import Projects from "./SmallCards/Projects";
-import BgImage from "@/components/Utility/BgImage";
-import HoverIcon from "@/components/Utility/HoverIcon";
 import GFonts from "./SmallCards/GFonts";
 import Service from "./SmallCards/Service";
 import Profile from "./SmallCards/Profile";
 import NofProjects from "./SmallCards/NofProjects";
 import LetsWork from "./SmallCards/LetsWork";
-import Link from "next/link";
 import ProfileCard from "./SmallCards/ProfileCard";
 
 function HeroSection() {
