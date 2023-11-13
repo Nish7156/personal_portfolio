@@ -27,7 +27,11 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     siteName: siteConfig.title,
-    images: [`favicon/OGimage.svg`],
+    images: [{
+      url: '/favicon/OGimage.svg',
+      width: 800,
+      height: 600,
+    },],
     type: "website",
     locale: "en_US",
   },
@@ -35,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
-    images: [`favicon/OGimage.svg`],
+    images: [`/favicon/OGimage.svg`],
   },
 };
 
