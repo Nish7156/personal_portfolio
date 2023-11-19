@@ -1,12 +1,10 @@
-/**
- * @type {import('next-sitemap').IConfig}
- */
+/** @type {import('next-sitemap').IConfig} */
+
+const dev = process.env.NODE_ENV !== "production";
+
 module.exports = {
-  // !STARTERCONF Change the siteUrl
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  siteUrl: '/',
+  siteUrl: dev
+    ? `https://personal-portfolio-brown-three.vercel.app`
+    : `https://personal-portfolio-brown-three.vercel.app`,
   generateRobotsTxt: true,
-  robotsTxtOptions: {
-    policies: [{ userAgent: '*', allow: '/' }],
-  },
 };
