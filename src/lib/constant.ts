@@ -1,5 +1,11 @@
-import TopgeekImage from "/public/images/topgeekai.jpg";
-import KofukuImage from "/public/images/kofuku.jpg";
+import TopgeekImage from "/public/images/hiroscope.png";
+import techOfIndia from "/public/images/techofindia.png";
+import RCSPLimg from "/public/images/rcspl.png";
+import SharingApp from "/public/images/links-sharing-app.png";
+
+import Food from "/public/images/Food Recipe App_React Native.png";
+
+import YT from "/public/images/YT Playlist Length Calculator.png";
 
 export const Menus = [
   { id: 1, title: "Home", link: "/" },
@@ -68,10 +74,10 @@ export const ProjectList = [
   {
     id: 1,
     title: "Web App",
-    projectTitle: "Toopgeek.ai",
+    projectTitle: "Hiroscope.ai",
     desc: "Revolutionize Hiring with AI-Powered Precision",
     image: TopgeekImage,
-    link: "https://topgeek.ai/",
+    link: "https://hirosocep.ai/",
     badge: null,
     techStack: [
       {
@@ -83,11 +89,67 @@ export const ProjectList = [
   {
     id: 2,
     title: "Web App",
-    projectTitle: "Kofuku Social",
-    desc: "Revolutionize Hiring with AI-Powered Precision",
-    image: KofukuImage,
-    link: "",
+    projectTitle: "Tech Of India",
+    desc: "News,Blogs",
+    image: techOfIndia,
+    link: "https://techofindia.in/",
     badge: "WIP",
+    techStack: [
+      {
+        icon: "",
+        name: "",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Website",
+    projectTitle: "RCSPL",
+    desc: "consultancy",
+    image: RCSPLimg,
+    link: "https://project1-weld-beta.vercel.app/",
+    techStack: [
+      {
+        icon: "",
+        name: "",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Web App",
+    projectTitle: "Link Sharing App",
+    desc: "Link Sharing App",
+    image: SharingApp,
+    link: "",
+    techStack: [
+      {
+        icon: "",
+        name: "",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Web App",
+    projectTitle: "Food Recipe App",
+    desc: "Food Recipe App",
+    image: Food,
+    link: "",
+    techStack: [
+      {
+        icon: "",
+        name: "",
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "Web App",
+    projectTitle: "YT Playlist Length Calculator",
+    desc: "YT Playlist Length Calculator",
+    image: YT,
+    link: "",
     techStack: [
       {
         icon: "",
