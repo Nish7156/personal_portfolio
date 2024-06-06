@@ -71,21 +71,21 @@ export const ClientData = [
 ];
 
 export const ProjectList = [
-  {
-    id: 1,
-    title: "Web App",
-    projectTitle: "Hiroscope.ai",
-    desc: "Revolutionize Hiring with AI-Powered Precision",
-    image: TopgeekImage,
-    link: "https://hirosocep.ai/",
-    badge: null,
-    techStack: [
-      {
-        icon: "",
-        name: "",
-      },
-    ],
-  },
+  // {
+  //   id: 1,
+  //   title: "Web App",
+  //   projectTitle: "Hiroscope.ai",
+  //   desc: "Revolutionize Hiring with AI-Powered Precision",
+  //   image: TopgeekImage,
+  //   link: "https://hirosocep.ai/",
+  //   badge: null,
+  //   techStack: [
+  //     {
+  //       icon: "",
+  //       name: "",
+  //     },
+  //   ],
+  // },
   {
     id: 2,
     title: "Web App",
