@@ -6,6 +6,7 @@ import SharingApp from "/public/images/links-sharing-app.png";
 import Food from "/public/images/Food Recipe App_React Native.png";
 
 import YT from "/public/images/YT Playlist Length Calculator.png";
+import WebTrig from "/public/images/webtriggers-new.png"
 
 export const Menus = [
   { id: 1, title: "Home", link: "/" },
@@ -71,21 +72,36 @@ export const ClientData = [
 ];
 
 export const ProjectList = [
-  // {
-  //   id: 1,
-  //   title: "Web App",
-  //   projectTitle: "Hiroscope.ai",
-  //   desc: "Revolutionize Hiring with AI-Powered Precision",
-  //   image: TopgeekImage,
-  //   link: "https://hirosocep.ai/",
-  //   badge: null,
-  //   techStack: [
-  //     {
-  //       icon: "",
-  //       name: "",
-  //     },
-  //   ],
-  // },
+  {
+    id: 0,
+    title: "Website",
+    projectTitle: "Web Triggers",
+    desc: "Ideas Become Websites",
+    image: WebTrig,
+    link: "https://webtriggers.tech/",
+    badge: null,
+    techStack: [
+      {
+        icon: "",
+        name: "",
+      },
+    ],
+  },
+  {
+    id: 1,
+    title: "Web App",
+    projectTitle: "Hiroscope.ai",
+    desc: "Revolutionize Hiring with AI-Powered Precision",
+    image: TopgeekImage,
+    link: "https://hirosocep.ai/",
+    badge: null,
+    techStack: [
+      {
+        icon: "",
+        name: "",
+      },
+    ],
+  },
   {
     id: 2,
     title: "Web App",
