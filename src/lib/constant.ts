@@ -79,7 +79,7 @@ export const ProjectList = [
     projectTitle: "Hiroscope.ai",
     desc: "Revolutionize Hiring with AI-Powered Precision",
     image: TopgeekImage,
-    link: "https://hirosocep.ai/",
+    link: "https://hiroscope.ai/",
     badge: null,
     techStack: [
       {
