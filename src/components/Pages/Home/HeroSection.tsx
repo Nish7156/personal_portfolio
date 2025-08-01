@@ -17,11 +17,12 @@ function HeroSection() {
           <div className="row">
             <div className="col-md-6 aos-init aos-animate" data-aos="zoom-in">
               <ProfileCard
-                title={"A WEB DEVELOPER."}
-                name={"NISHANT SHEDAGE"}
-                desc={"I am web developer based on Mumbai."}
-                link="/about"
-              />
+  title="Web Developer"
+  name="Nishant Shedage"
+  desc="I’m a web developer based in Mumbai, specializing in building modern and responsive web applications."
+  link="/about"
+/>
+
             </div>
             <div className="col-md-6">
               <div className="about-credentials-wrap">
@@ -40,7 +41,7 @@ function HeroSection() {
           <div className="row !mt-8">
             <div className="col-md-12">
               <div className="blog-service-profile-wrap d-flex gap-6">
-                <GFonts />
+                {/* <GFonts /> */}
 
                 <Service />
 

@@ -86,14 +86,8 @@ function AboutTop() {
 
                       <h1 className="text-primary">Nishant Shedage</h1>
                       <p className="pt-2">
-                        I'm a full-stack developer with skills in both front-end
-                        and back-end development, using languages like HTML,
-                        CSS, JavaScript, and technologies such as PHP or Python.
-                        I specialize in creating user-friendly and
-                        high-performance web applications, offering end-to-end
-                        solutions for diverse online experiences. My commitment
-                        is to deliver seamless and responsive projects that
-                        contribute to a positive user journey.
+                       I'm a full-stack web developer skilled in both front-end and back-end development. I work with modern technologies such as HTML, CSS, JavaScript (ES6+), React, Next.js, Node.js, Express, and databases like MongoDB and PostgreSQL.
+I specialize in building scalable, high-performance, and user-friendly web applications, delivering complete end-to-end solutions. My focus is on writing clean, maintainable code and creating seamless, responsive digital experiences that enhance the user journey.
                       </p>
                     </div>
                   </div>

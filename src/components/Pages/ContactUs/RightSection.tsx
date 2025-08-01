@@ -23,7 +23,8 @@ function RightSection() {
           <h1>
             Let’s work <span>together.</span>
           </h1>
-          <form method="POST" action="mailer.php">
+          <form  method="POST"
+  action="https://formspree.io/f/xldllvby"  >
             {/* <div className="alert alert-success messenger-box-contact__msg" style="display: none;" role="alert">
                             Your message was sent successfully.
                         </div> */}

@@ -4,7 +4,7 @@ import * as React from 'react';
 
 export const metadata: Metadata = {
   title: 'Components',
-  description: 'Pre-built components with awesome default',
+  // description: 'Pre-built components with awesome default',
 };
 
 export default function ComponentsLayout({

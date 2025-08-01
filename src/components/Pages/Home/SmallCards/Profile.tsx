@@ -11,7 +11,7 @@ function Profile() {
         <div className="about-profile-box info-box shadow-box h-full">
           <BgImage />
           <div className="inner-profile-icons shadow-box">
-            <Link href={"https://webtriggers.tech/"} prefetch={false} legacyBehavior>
+            <Link href={"https://github.com/Nish7156"} prefetch={false} legacyBehavior>
               <a target="_blank" rel="noopener noreferrer">
                 <Dribbble fontSize={"22px"} />
               </a>
@@ -26,10 +26,10 @@ function Profile() {
           <div className="d-flex align-items-center justify-content-between">
             <div className="infos">
               <h4>Stay with me</h4>
-              <h1>Profiles</h1>
+              <h1>Profile</h1>
             </div>
 
-            <Link href={"/"} className="about-btn">
+            <Link href={"/about"} className="about-btn">
               <HoverIcon />
             </Link>
           </div>

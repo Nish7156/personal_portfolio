@@ -3,7 +3,7 @@ import React from "react";
 import ProjectCard from "@/components/CommonComponents/ProjectCard";
 
 async function getData() {
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  await new Promise((resolve) => setTimeout(resolve, 0));
   return ProjectList;
 }
 

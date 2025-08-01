@@ -72,21 +72,7 @@ export const ClientData = [
 ];
 
 export const ProjectList = [
-  {
-    id: 0,
-    title: "Website",
-    projectTitle: "Web Triggers",
-    desc: "Ideas Become Websites",
-    image: WebTrig,
-    link: "https://webtriggers.tech/",
-    badge: null,
-    techStack: [
-      {
-        icon: "",
-        name: "",
-      },
-    ],
-  },
+
   {
     id: 1,
     title: "Web App",
@@ -101,24 +87,9 @@ export const ProjectList = [
         name: "",
       },
     ],
-  },
+  },  
   {
     id: 2,
-    title: "Web App",
-    projectTitle: "Tech Of India",
-    desc: "News,Blogs",
-    image: techOfIndia,
-    link: "https://techofindia.in/",
-    badge: "WIP",
-    techStack: [
-      {
-        icon: "",
-        name: "",
-      },
-    ],
-  },
-  {
-    id: 3,
     title: "Website",
     projectTitle: "RCSPL",
     desc: "consultancy",
@@ -132,40 +103,28 @@ export const ProjectList = [
     ],
   },
   {
+    id: 3,
+    title: "Website",
+    projectTitle: "Web Triggers",
+    desc: "Ideas Become Websites",
+    image: WebTrig,
+    link: "https://webtriggers.tech/",
+    badge: null,
+    techStack: [
+      {
+        icon: "",
+        name: "",
+      },
+    ],
+  },
+  {
     id: 4,
     title: "Web App",
-    projectTitle: "Link Sharing App",
-    desc: "Link Sharing App",
-    image: SharingApp,
-    link: "",
-    techStack: [
-      {
-        icon: "",
-        name: "",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "Web App",
-    projectTitle: "Food Recipe App",
-    desc: "Food Recipe App",
-    image: Food,
-    link: "",
-    techStack: [
-      {
-        icon: "",
-        name: "",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Web App",
-    projectTitle: "YT Playlist Length Calculator",
-    desc: "YT Playlist Length Calculator",
-    image: YT,
-    link: "",
+    projectTitle: "Tech Of India",
+    desc: "News,Blogs",
+    image: techOfIndia,
+    link: "https://techofindia.in/",
+    badge: "WIP",
     techStack: [
       {
         icon: "",
