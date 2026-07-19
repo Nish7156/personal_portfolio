@@ -1,3 +1,4 @@
+'use client';
 // visibility.js
 import { useEffect } from 'react';
 

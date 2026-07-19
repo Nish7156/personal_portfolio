@@ -13,7 +13,7 @@ function LetsWork() {
             <BgImage />
           </div>
           <h1>
-            Let's <br />
+            Let&apos;s <br />
             work <span>together.</span>
           </h1>
           <Link className="about-btn" href={"/contact-us"} prefetch={false}>

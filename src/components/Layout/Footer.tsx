@@ -8,13 +8,13 @@ function Footer({ Menus }: any) {
       <footer className="footer-area">
         <div className="container">
           <div className="footer-content text-center">
-            <Link href={""} className="logo">
+            <Link href={"/"} className="logo">
               <Logo />
             </Link>
             <ul className="footer-menu">
               {Menus.map((data: any) => {
                 return (
-                  <li>
+                  <li key={data.id}>
                     <Link href={`${data.link}`}>{data.title}</Link>
                   </li>
                 );

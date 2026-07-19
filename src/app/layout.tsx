@@ -10,6 +10,9 @@ import { siteConfig } from "@/constant/config";
 import Layout from "@/components/Layout";
 
 export const metadata: Metadata = {
+  // Without this, Next resolves OG/Twitter image URLs against
+  // http://localhost:3000 and warns on every page during the build.
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.title,
     template: `%s | ${siteConfig.title}`,
@@ -27,10 +30,12 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     siteName: siteConfig.title,
+    // SVG is not a valid Open Graph image — X/LinkedIn/WhatsApp all ignore
+    // it and show no preview. Use the PNG that already ships in /public.
     images: [{
-      url: '/favicon/OGimage.svg',
-      width: 800,
-      height: 600,
+      url: '/images/ogImage.png',
+      width: 1200,
+      height: 630,
     },],
     type: "website",
     locale: "en_US",
@@ -39,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
-    images: [`/favicon/OGimage.svg`],
+    images: [`/images/ogImage.png`],
   },
 };
 
@@ -49,7 +54,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html lang="en" className="dark">
+      <head>
+        {/* Fetch Inter in parallel with the CSS instead of after it, so the
+            first paint already uses the real font rather than swapping. */}
+        <link
+          rel="preload"
+          href="/fonts/inter-var-latin.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>
         <main className="main-homepage">
           <Layout>{children}</Layout>

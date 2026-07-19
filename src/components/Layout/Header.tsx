@@ -3,8 +3,6 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Logo from "../Utility/Logo";
 import { usePathname } from "next/navigation";
-import { usePageVisibility } from "../UserTraking/usePageVisibility";
-import { Metadata } from "next";
 
 function Header({ Menus }: any) {
   const pathname = usePathname();
@@ -51,19 +49,22 @@ function Header({ Menus }: any) {
               <ul className="menu">
                 {Menus.map((data: any) => {
                   return (
-                    <li className={pathname === data.link ? "active" : ""}>
+                    <li
+                      key={data.id}
+                      className={pathname === data.link ? "active" : ""}
+                    >
                       <Link href={`${data.link}`}>{data.title}</Link>
                     </li>
                   );
                 })}
               </ul>
               <Link href={"/contact-us"} legacyBehavior>
-                <a className="theme-btn">Let's talk</a>
+                <a className="theme-btn">Let&apos;s talk</a>
               </Link>
             </nav>
 
             <Link href={"/contact-us"} legacyBehavior>
-              <a className="theme-btn">Let's talk</a>
+              <a className="theme-btn">Let&apos;s talk</a>
             </Link>
 
             <div

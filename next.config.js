@@ -7,11 +7,22 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 
+  // Fully static site: `next build` emits plain HTML/CSS/JS into ./out
+  // with no Node server required. Deployable to S3, GitHub Pages, etc.
+  output: 'export',
+
+  // Static hosts serve directories, so emit /about/index.html rather than
+  // /about.html — otherwise visiting /about 404s on S3.
+  trailingSlash: true,
+
   // Uncoment to add domain whitelist
   images: {
     domains: [
       'wpriverthemes.com',
     ],
+    // The Next.js image optimizer needs a running server, which a static
+    // export does not have. Images are served as-is.
+    unoptimized: true,
   },
 
   webpack(config) {

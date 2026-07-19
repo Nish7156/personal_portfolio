@@ -9,7 +9,7 @@ function StarHeading({ heading }: { heading: string }) {
           width={48}
           height={48}
           src={
-            "https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
+            "/images/star-2.png"
           }
           alt="Star"
           loading="lazy"
@@ -19,7 +19,7 @@ function StarHeading({ heading }: { heading: string }) {
           width={48}
           height={48}
           src={
-            "https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
+            "/images/star-2.png"
           }
           alt="Star"
           loading="lazy"

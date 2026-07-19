@@ -14,11 +14,11 @@ function MovingHeadings() {
                 {MovingHeading &&
                   MovingHeading.map((data: any) => {
                     return (
-                      <>
+                      <React.Fragment key={data?.id}>
                         {upperCase(data?.text)}{" "}
                         <b>{upperCase(data?.boldText)}</b>{" "}
                         <Image width={10} height={10} src={"/svg/star1.svg"} alt="Star" />
-                      </>
+                      </React.Fragment>
                     );
                   })}
               </span>

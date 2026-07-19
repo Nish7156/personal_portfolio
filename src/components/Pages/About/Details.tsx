@@ -18,7 +18,7 @@ function Details() {
                     <div className="about-edc-exp about-experience shadow-box">
                       <img
                         decoding="async"
-                        src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/bg1.png"
+                        src="/images/bg1.png"
                         alt="BG"
                         className="bg-img"
                       />
@@ -56,7 +56,7 @@ function Details() {
                     <div className="about-edc-exp about-education shadow-box">
                       <img
                         decoding="async"
-                        src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/bg1.png"
+                        src="/images/bg1.png"
                         alt="BG"
                         className="bg-img"
                       />

@@ -6,7 +6,7 @@ function TwoDetailsCards() {
       <div className="left-details">
         <img
           decoding="async"
-          src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2.png"
+          src="/images/icon2.png"
           alt="Icon"
           className="star-icon"
         />

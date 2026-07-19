@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js and Yarn
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: 18.15.0  # Use a version of Node.js that meets the requirements
           registry-url: https://registry.npmjs.org
@@ -24,14 +24,23 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build
-        run: yarn build  # Replace with your actual build command
+        run: yarn build  # static export -> ./out
 
       - name: Set up AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1  # Change this to your desired AWS region
 
       - name: Upload to S3
-        run: aws s3 cp ./dist s3://your-bucket-name/ --recursive
+        # Hashed build assets get a long cache; HTML must stay uncached so
+        # visitors pick up new deploys immediately.
+        run: |
+          aws s3 sync ./out "s3://${{ secrets.AWS_S3_BUCKET }}/" \
+            --delete \
+            --exclude "*.html" \
+            --cache-control "public,max-age=31536000,immutable"
+          aws s3 sync ./out "s3://${{ secrets.AWS_S3_BUCKET }}/" \
+            --exclude "*" --include "*.html" \
+            --cache-control "public,max-age=0,must-revalidate"

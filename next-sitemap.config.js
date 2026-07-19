@@ -1,10 +1,9 @@
 /** @type {import('next-sitemap').IConfig} */
 
-const dev = process.env.NODE_ENV !== "production";
-
 module.exports = {
-  siteUrl: dev
-    ? `https://personal-portfolio-brown-three.vercel.app`
-    : `https://personal-portfolio-brown-three.vercel.app`,
+  siteUrl: 'https://personal-portfolio-brown-three.vercel.app',
   generateRobotsTxt: true,
+  // Static export writes to ./out, so robots.txt and sitemap.xml must land
+  // there too — otherwise they are never uploaded with the site.
+  outDir: './out',
 };

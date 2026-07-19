@@ -171,7 +171,7 @@ ol {
   font-size: 74px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: -01px;
+  letter-spacing: -1px;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -475,7 +475,7 @@ ol {
 .about-area {
   padding-top: 50px;
 }
-@media (max-width: 678) {
+@media (max-width: 678px) {
   .about-area {
     padding-top: 20px !important;
   }
@@ -1026,7 +1026,7 @@ ol {
 .service-area .service-sidebar .service-sidebar-inner ul li {
   font-size: 16px;
   line-height: 16.8px;
-  letter-spacing: -1%;
+  letter-spacing: -0.01em;
   font-weight: 400;
   color: #ffffff;
   display: flex;
@@ -1057,7 +1057,7 @@ ol {
   font-weight: 500;
   opacity: 0.56;
   text-transform: uppercase;
-  letter-spacing: -1%;
+  letter-spacing: -0.01em;
 }
 .service-area .service-content-wrap .service-content-inner .service-item p {
   color: #ffffff;
@@ -1173,7 +1173,7 @@ ol {
   display: block;
   color: var(--primary_color);
   font-size: 16px;
-  letter-spacing: -1%;
+  letter-spacing: -0.01em;
   font-weight: 400;
   line-height: 16.8px;
   margin-bottom: 10px;
@@ -1239,7 +1239,7 @@ ol {
   font-size: 24px;
   line-height: 26.8px;
   color: #ffffff;
-  letter-spacing: -1%;
+  letter-spacing: -0.01em;
   margin-bottom: 40px;
 }
 .blog-details-area
@@ -1294,7 +1294,7 @@ ol {
   .date {
   line-height: 16.8px;
   color: var(--primary_color);
-  letter-spacing: -1%;
+  letter-spacing: -0.01em;
   font-size: 16px;
   font-weight: 500;
   display: block;
@@ -1310,7 +1310,7 @@ ol {
   font-size: 24px;
   line-height: 26.8px;
   color: #ffffff;
-  letter-spacing: -1%;
+  letter-spacing: -0.01em;
 }
 .blog-details-area
   .blog-details-content
@@ -1462,10 +1462,18 @@ ol {
   height: 145px;
   resize: none;
 }
+/* White-on-near-transparent left the UA default placeholder almost invisible. */
+.contact-area .contact-form form .input-group textarea::placeholder,
+.contact-area .contact-form form .input-group input::placeholder {
+  color: #bcbcbc;
+  opacity: 0.5;
+}
 .contact-area .contact-form form .input-group textarea:focus,
 .contact-area .contact-form form .input-group input:focus {
   outline: none;
-  box-shadow: none;
+  /* Killing the outline with no replacement left keyboard users with no
+     visible focus target at all. */
+  box-shadow: 0 0 0 2px rgba(170, 159, 255, 0.6);
 }
 .contact-area .contact-form form .input-group button {
   width: 100%;
@@ -1473,9 +1481,22 @@ ol {
   border-radius: 10px;
   font-size: 14px;
   padding: 16px 30px;
+  /* Tailwind's preflight resets `[type=submit]` to a transparent background,
+     and that selector ties with `.theme-btn` on specificity — so the Send
+     Message button rendered as bare white text with no button behind it.
+     Restating it here wins on specificity regardless of stylesheet order. */
+  background: var(--dark);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-area .contact-form form .input-group button:hover {
+  background: #fff;
+  color: var(--dark);
 }
 .contact-area .contact-infos {
-  width: 290px;
+  width: 100%;
+  max-width: 290px;
   flex: none;
 }
 .contact-area .contact-infos h3 {
@@ -1802,6 +1823,10 @@ ol {
     background: #0f0f0f;
     z-index: 15;
     overflow-x: hidden;
+    /* Without these the open menu has no scroll path, so on a short
+       (landscape phone) viewport the lower items are unreachable. */
+    max-height: 100vh;
+    overflow-y: auto;
     /* height: 80px; */
     transform-origin: 50% 50% 0px;
     top: 0;
@@ -1859,6 +1884,11 @@ ol {
   .contact-area .contact-form,
   .credential-area .credential-sidebar {
     width: 100%;
+  }
+  /* Once the row stacks into a single column, a sticky full-width sidebar
+     would pin itself over the content below it. */
+  .credential-area .credential-sidebar {
+    position: static;
   }
   .about-area .about-experience {
     margin-bottom: 24px;
@@ -1984,6 +2014,10 @@ ol {
   }
   .about-area .about-details .about-details-inner {
     padding-top: 80px;
+    /* The desktop 60px/30px side padding ate ~90px of a ~280px content box
+       on small phones, squeezing the copy into a narrow ribbon. */
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .projects-area .container > .section-heading {
     display: flex;

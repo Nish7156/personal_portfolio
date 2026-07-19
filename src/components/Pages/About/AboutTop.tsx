@@ -26,7 +26,7 @@ function AboutTop() {
                     <div className="about-image-box shadow-box">
                       <img
                         decoding="async"
-                        src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/bg1.png"
+                        src="/images/bg1.png"
                         alt="BG"
                         className="bg-img"
                       />
@@ -65,13 +65,13 @@ function AboutTop() {
                     <h1 className="section-heading mb-12" data-aos="">
                       <img
                         decoding="async"
-                        src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
+                        src="/images/star-2.png"
                         alt="Star"
                       />
                       Self-summary
                       <img
                         decoding="async"
-                        src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
+                        src="/images/star-2.png"
                         alt="Star"
                       />
                     </h1>
@@ -79,14 +79,14 @@ function AboutTop() {
                     <div className="about-details-inner shadow-box">
                       <img
                         decoding="async"
-                        src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2.png"
+                        src="/images/icon2.png"
                         alt="Icon"
                         className="star-icon"
                       />
 
                       <h1 className="text-primary">Nishant Shedage</h1>
                       <p className="pt-2">
-                       I'm a full-stack web developer skilled in both front-end and back-end development. I work with modern technologies such as HTML, CSS, JavaScript (ES6+), React, Next.js, Node.js, Express, and databases like MongoDB and PostgreSQL.
+                       I&apos;m a full-stack web developer skilled in both front-end and back-end development. I work with modern technologies such as HTML, CSS, JavaScript (ES6+), React, Next.js, Node.js, Express, and databases like MongoDB and PostgreSQL.
 I specialize in building scalable, high-performance, and user-friendly web applications, delivering complete end-to-end solutions. My focus is on writing clean, maintainable code and creating seamless, responsive digital experiences that enhance the user journey.
                       </p>
                     </div>
