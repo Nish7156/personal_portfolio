@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js and Yarn
         uses: actions/setup-node@v4
         with:
-          node-version: 18.15.0  # Use a version of Node.js that meets the requirements
+          node-version: 24.x  # Node 18 is EOL; keep in sync with engines.node
           registry-url: https://registry.npmjs.org
           cache: 'yarn'
 
